@@ -35,13 +35,12 @@ Accuracy achieved: 97.5%
 
 Handwritten-digit-Equation-solver/
 │
-├── data/
-├── results/
 ├── src/
-│ ├── train.py
-│ └── predict.py
+│   ├── train.py
+│   └── predict.py
 │
-└── week1.py
+├── week1.py
+└── README.md
 
 ### Next Step
 - Improve digit recognition.
