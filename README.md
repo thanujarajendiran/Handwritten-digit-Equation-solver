@@ -1,48 +1,44 @@
 # Handwritten Digit and Equation Solver
 
-## Week 1
+## Project Overview
+This project recognizes handwritten digits and aims to solve handwritten mathematical equations using machine learning and image processing techniques.
 
-For the first week, I worked on building a basic handwritten digit classifier using Machine Learning.
+## Week 1 Progress
+- Trained a handwritten digit classifier.
+- Implemented digit prediction.
+- Used Logistic Regression with the MNIST dataset.
+
+## Week 2 Progress
+
+### Tasks Completed
+- Image Processing
+- Feature Extraction
+- Dataset Enhancement
 
 ### Technologies Used
 - Python
-- Scikit-learn
+- OpenCV
 - NumPy
-- Matplotlib
-- Visual Studio Code
-- Git & GitHub
+- Scikit-learn
 
-### What I Did
-- Loaded the handwritten digits dataset from scikit-learn.
-- Split the data into training and testing sets.
-- Trained a Logistic Regression model.
-- Predicted handwritten digits.
-- Evaluated model accuracy.
+### Outputs
+- Converted images to grayscale
+- Resized images to 28 × 28
+- Applied Gaussian Blur
+- Detected edges using Canny Edge Detection
+- Counted contours
+- Enhanced dataset using:
+  - Rotation
+  - Horizontal Flip
+  - Brightness Adjustment
 
-### Sample Prediction
+## Folder Structure
 
-Input:
-Handwritten digit image
+images/
+results/
+src/
 
-Output:
-Predicted Digit: 6
-Actual Digit: 6
-
-### Result
-Accuracy achieved: 97.5%
-
-### Project Structure
-
-Handwritten-digit-Equation-solver/
-│
-├── src/
-│   ├── train.py
-│   └── predict.py
-│
-├── week1.py
-└── README.md
-
-### Next Step
-- Improve digit recognition.
-- Recognize mathematical symbols.
-- Build handwritten equation solver.
+## Future Work
+- Recognize handwritten equations
+- Predict mathematical symbols
+- Solve handwritten equations automatically
