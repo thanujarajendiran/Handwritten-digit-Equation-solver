@@ -1,44 +1,113 @@
-# Handwritten Digit and Equation Solver
+# AI Handwritten Equation Solver
 
-## Project Overview
-This project recognizes handwritten digits and aims to solve handwritten mathematical equations using machine learning and image processing techniques.
+## 📖 Project Overview
 
-## Week 1 Progress
-- Trained a handwritten digit classifier.
-- Implemented digit prediction.
-- Used Logistic Regression with the MNIST dataset.
+The AI Handwritten Equation Solver is an AI-powered web application that recognizes handwritten mathematical equations from images, converts them into digital text, and solves them automatically.
 
-## Week 2 Progress
+This project was developed as part of the **PENTAS HUB Internship Program**.
 
-### Tasks Completed
-- Image Processing
-- Feature Extraction
-- Dataset Enhancement
+---
 
-### Technologies Used
+## 🚀 Project Progress
+
+### ✅ Week 3 – CNN for Digit & Mathematical Symbol Recognition
+- Image preprocessing using OpenCV
+- CNN model for handwritten digit recognition
+- CNN model for mathematical symbol recognition
+- Model training and prediction
+
+### ✅ Week 4 – Equation Recognition using Transformers
+- Integrated Microsoft's TrOCR model
+- Converted handwritten equations into editable text
+- Improved image preprocessing for OCR
+
+### ✅ Week 5 – Complete AI Equation Solver
+- FastAPI Backend
+- React + Vite Frontend
+- Camera Capture
+- Drag & Drop Upload
+- Equation Solving using SymPy
+- Download Result
+- History Panel
+- Responsive & Mobile-Friendly UI
+
+---
+
+## ✨ Features
+
+- Handwritten Equation Recognition
+- AI-powered OCR (TrOCR)
+- CNN-based Symbol Recognition
+- Image Upload
+- Drag & Drop Upload
+- Camera Capture
+- Equation Solving using SymPy
+- Download Result
+- History Panel
+- Responsive Modern UI
+- Mobile-Friendly Design
+
+---
+
+## 🛠 Technologies Used
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+
+### Backend
 - Python
+- FastAPI
 - OpenCV
-- NumPy
-- Scikit-learn
+- SymPy
+- Transformers (TrOCR)
+- TensorFlow / CNN
 
-### Outputs
-- Converted images to grayscale
-- Resized images to 28 × 28
-- Applied Gaussian Blur
-- Detected edges using Canny Edge Detection
-- Counted contours
-- Enhanced dataset using:
-  - Rotation
-  - Horizontal Flip
-  - Brightness Adjustment
+---
 
-## Folder Structure
+## 📂 Project Structure
 
-images/
-results/
-src/
+```text
+AI-Handwritten-Equation-Solver/
+│
+├── backend/
+│   ├── app.py
+│   ├── solver.py
+│   ├── segment.py
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── ...
+│
+└── README.md
+```
 
-## Future Work
-- Recognize handwritten equations
-- Predict mathematical symbols
-- Solve handwritten equations automatically
+---
+
+## 🚀 Installation
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+python -m uvicorn app:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+
+## 👩‍💻 Author
+
+**Thanuja Shree R**
+
+Developed as part of the **PENTAS HUB Internship Program**.
