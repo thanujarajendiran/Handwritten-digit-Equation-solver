@@ -1,5 +1,6 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 import shutil
 import os
 
@@ -32,5 +33,14 @@ async def predict(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     result = solve_image(filepath)
+    if __name__ == "__main__":
+    
+
+        uvicorn.run(
+        "app:app",
+        host="127.0.0.1",
+        port=8000,
+        reload=True
+        )
 
     return result
